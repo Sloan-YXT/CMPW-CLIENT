@@ -55,24 +55,19 @@ uint8 readSensorData(void)
     }
     unsigned int crc=0; 
     unsigned int i;
-    pinMode(pinNumber, OUTPUT); // set mode to output
-    digitalWrite(pinNumber, 0); // output a high level 
-    pullUpDnControl(pinNumber,PUD_DOWN);
+    pinMode(pinNumber, OUTPUT);
+    digitalWrite(pinNumber, 0); 
     delay(20);
-    digitalWrite(pinNumber, 1); // output a low level 
-    pullUpDnControl(pinNumber, PUD_UP);
     pinMode(pinNumber, INPUT); // set mode to input
+    pullUpDnControl(pinNumber, PUD_UP);
     delayMicroseconds(40);
     //while(digitalRead(pinNumber));
     if (digitalRead(pinNumber) == 0) //SENSOR ANS
     {
-        while (!digitalRead(pinNumber))
-            ; //wait to high
-       
+        while (!digitalRead(pinNumber));
+        while(digitalRead(pinNumber));
         for (i = 0; i < 32; i++)
         {
-             while (digitalRead(pinNumber))
-                ; //data clock start
             while (!digitalRead(pinNumber))
                 ; //data start
             delayMicroseconds(HIGH_TIME);
@@ -81,31 +76,33 @@ uint8 readSensorData(void)
             {
                 databuf++;
             }
+            while(digitalRead(pinNumber));
         }
 
         for (i = 0; i < 8; i++)
         {
-            while (digitalRead(pinNumber))
-                ; //data clock start
-            while (!digitalRead(pinNumber))
-                ; //data start
+            while (!digitalRead(pinNumber)); 
             delayMicroseconds(HIGH_TIME);
             crc *= 2;  
             if (digitalRead(pinNumber) == 1) //1
             {
                 crc++;
             }
+            while(digitalRead(pinNumber));
         }
-        /*
-        int checksum = (((databuf>>24)&0xff)+((databuf>>16)&0xff)+((databuf>>8)&0xff)+((databuf>>8)&0xff))&0xff;
-        printf("%d %d\n",crc,checksum);
+        pinMode(pinNumber,OUTPUT);
+        digitalWrite(pinNumber,0);
+        delayMicroseconds(50);
+        pullUpDnControl(pinNumber, PUD_UP);
+        //digitalWrite(pinNumber,1);
+         
+        int checksum = (((databuf>>24)&0xff)+((databuf>>16)&0xff)+((databuf>>8)&0xff)+((databuf)&0xff))&0xff;
+        #ifdef TEST
+        printf("checksum error:%d %d\n",crc,checksum);
+        #endif
         if(crc!=checksum)
         {
-            return 0;
-        }*/
-        int checkt = ((databuf>>8)&0xff);
-        if(checkt>50|checkt<10)
-        {
+            printf("error:checksum error:%d %d\n",crc,checksum);
             return 0;
         }
         if(alarm(0)==-1)
@@ -131,14 +128,13 @@ void readData(void)
     int i;
     for(int i=0;i<SCALE;i++)
     {
+        // pinMode(pinNumber, OUTPUT); // set mode to output
+        // digitalWrite(pinNumber, 1); // output a high level 
         databuf = 0;
-        pinMode(pinNumber, OUTPUT); // set mode to output
-        digitalWrite(pinNumber, 1); // output a high level 
-        delay(2000);
         if(readSensorData()==0)
         {
             printf("Sorry,this time of reading has failed!\n");
-            delay(1000);
+            //delay(1000);
             datapool[i]=0;
             i--;
             continue;
@@ -150,6 +146,7 @@ void readData(void)
             printf("TMP:%d.%d\n", (databuf >> 8) & 0xff, databuf & 0xff);
         }
         datapool[i]=databuf;
+        delay(2000);
     }
 }
 int packer(char*message_box,unsigned int mode,const char *client_name)
@@ -189,7 +186,16 @@ void sendMessage(int connfd,char *message_box)
         exit(1);
     }
     */
-    int result = write(connfd,message_box,strlen(message_box));
+    int len = strlen(message_box);
+    len = htonl(len);
+    int result = write(connfd,&len,sizeof(len));
+    if(result==0|result==-1)
+    {
+        printf("Data transferring error:");
+        printf("%s",strerror(errno));
+        reopen = 1;
+    }
+    result = write(connfd,message_box,strlen(message_box));
     if(result==0|result==-1)
     {
         printf("Data transferring error:");
@@ -261,6 +267,7 @@ void* testThread(void *arg)
 }
 int main(void)
 {  
+    
     struct sigaction sigpipe,sigint,sigalarm;
     sigemptyset(&sigpipe.sa_mask);
     sigpipe.sa_flags=0;
@@ -308,13 +315,17 @@ int main(void)
         printf("Setup wiringPi failed!");
         return 1;
     }
-    pinMode(pinNumber, OUTPUT); // set mode to output
-    digitalWrite(pinNumber, 1); // output a high level
+    // pinMode(pinNumber, OUTPUT); // set mode to output
+    // digitalWrite(pinNumber, 1); // output a high level
+    // delay(2000);
     printf("..................raspi sensor working..................\n");
     if(sigsetjmp(senv,1)!=0)
     {
         reconnect++;
     }
+     pinMode(pinNumber, OUTPUT); // set mode to output
+        digitalWrite(pinNumber, 1); // output a high level 
+        delay(1200);
     while (1) 
     {
         readData();
