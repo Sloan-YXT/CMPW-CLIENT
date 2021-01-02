@@ -1,0 +1,50 @@
+application livevideo0{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo1{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo2{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo3{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo4{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo5{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo6{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo7{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo8{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
+application livevideo9{
+	live on;
+	#hls on;
+	#hls_path /home/yaoxuetao/software/nginx-rtmp-module-master/hls;
+}
