@@ -22,6 +22,10 @@
 #define _GNU_SOURCE
 #define SCALE 1
 #define FIFO_DIR "./communication.fifo"
+//1.连接serer时会卡死(已解决：连续accept的逻辑问题)
+//2.原因不明的raspivide运行失败+rtmp拉流方式，必须修改方案
+//3.原因不明的ECONNRESET
+//4.收到sigpipe后exec，输出不输出到终端，不明
 using namespace std;
 using namespace nlohmann;
 int timeout;
@@ -243,8 +247,11 @@ void cleanUp(void)
     close(connfdTick);
     //close(graph_fd);
     close(comfd);
+    //if (pid1 != 0)
     kill(pid1, SIGKILL);
+    //if (pid2 != 0)
     kill(pid2, SIGKILL);
+    //if (pid3 != 0)
     kill(pid3, SIGKILL);
     //unlink(FIFO_DIR);
 #ifndef DEBUG
@@ -264,8 +271,7 @@ void cleanUp(void)
         execlp("rm", "rm", "-rf", CPATH, NULL);
     }
 #endif
-    execl("./client", "./client", port, NULL);
-    perror("rexec failed");
+    //perror("rexec failed");
 }
 void *graph_thread(void *args)
 {
@@ -371,7 +377,8 @@ void overtiming(int signo)
 void sigIntHandle(int signo)
 {
     printf("recv SIGINT!\n");
-    exit(0);
+    cleanUp();
+    execl("./client", "./client", port, NULL);
 }
 void *testThread(void *arg)
 {
@@ -451,6 +458,7 @@ int main(int arc, char *argv[])
     connfdData = socket(AF_INET, SOCK_STREAM, 0);
     connfdGraph = socket(AF_INET, SOCK_STREAM, 0);
     connfdTick = socket(AF_INET, SOCK_STREAM, 0);
+    atexit(cleanUp);
     // if (mkfifo(FIFO_DIR, 0777) < 0)
     // {
     //     perror("fifo failed");
@@ -501,6 +509,7 @@ int main(int arc, char *argv[])
         exit(1);
     }
     vcode = ntohl(vcode);
+    printf("debug:vcode==%d\n", vcode);
     n = recv(connfdData, &len, sizeof(len), MSG_WAITALL);
     if (n <= 0)
     {
@@ -551,7 +560,7 @@ int main(int arc, char *argv[])
 
         int id = -1;
         sigsetjmp(senv1, 1);
-        alarm(duration_num + 5); //避免无法启动
+        alarm(duration_num + 8); //避免无法启动
         int pid1_c = fork();
         id = (id + 1) % 10;
         if (pid1_c < 0)
@@ -643,7 +652,7 @@ int main(int arc, char *argv[])
         while (1)
             ;
     }
-    atexit(cleanUp);
+
     if (-1 == wiringPiSetup())
     {
         printf("Setup wiringPi failed!");
