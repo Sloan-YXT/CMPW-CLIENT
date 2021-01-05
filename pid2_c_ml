@@ -20,22 +20,4 @@ ffmpeg version 4.1.6-1~deb10u1+rpt1 Copyright (c) 2000-2020 the FFmpeg developer
   libswscale      5.  3.100 /  5.  3.100
   libswresample   3.  3.100 /  3.  3.100
   libpostproc    55.  3.100 / 55.  3.100
-Input #0, h264, from './video/liveshow':
-  Duration: N/A, bitrate: N/A
-    Stream #0:0: Video: h264 (High), yuv420p(progressive), 600x480, 25 fps, 25 tbr, 1200k tbn, 50 tbc
-Stream mapping:
-  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
-Press [q] to stop, [?] for help
-[swscaler @ 0x1bab3d0] deprecated pixel format used, make sure you did set range correctly
-Output #0, image2, to './faces/image-%d.jpeg':
-  Metadata:
-    encoder         : Lavf58.20.100
-    Stream #0:0: Video: mjpeg, yuvj420p(pc), 600x480, q=2-31, 200 kb/s, 1 fps, 1 tbn, 1 tbc
-    Metadata:
-      encoder         : Lavc58.35.100 mjpeg
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
-frame=    3 fps=0.0 q=2.0 size=N/A time=00:00:02.00 bitrate=N/A dup=0 drop=27 speed=3.94x    frame=    4 fps=3.9 q=2.0 size=N/A time=00:00:03.00 bitrate=N/A dup=0 drop=62 speed=2.95x    frame=    6 fps=3.9 q=2.0 size=N/A time=00:00:05.00 bitrate=N/A dup=0 drop=107 speed=3.29x    frame=    8 fps=3.9 q=2.0 size=N/A time=00:00:07.00 bitrate=N/A dup=0 drop=151 speed=3.46x    frame=   11 fps=4.4 q=2.0 size=N/A time=00:00:10.00 bitrate=N/A dup=0 drop=225 speed=3.96x    [h264 @ 0x1b52060] error while decoding MB 37 20, bytestream -19
-[h264 @ 0x1b52060] concealing 392 DC, 392 AC, 392 MV errors in P frame
-frame=   11 fps=4.3 q=2.0 Lsize=N/A time=00:00:11.00 bitrate=N/A dup=0 drop=231 speed=4.29x    
-video:61kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+./video/liveshow: Invalid data found when processing input
