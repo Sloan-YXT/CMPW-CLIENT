@@ -4,11 +4,16 @@ import numpy as np
 import cv2
 import sys
 import os
+import socket
 # 要使用Haar cascade实现，仅需要把库修改为lbpcascade_frontalface.xml
 # cv2.data.haarcascades
 #face_cascade = cv2.CascadeClassifier('lbpcascade_frontalface.xml')
-FIFO_NAME = "./communication.fifo"
-f_record = open(FIFO_NAME, 'w')
+#FIFO_NAME = "./communication.fifo"
+HOST = "127.0.0.1"
+PORT = sys.argv[3]
+#f_record = open(FIFO_NAME, 'w')
+f_record = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+f_record.connect((HOST, PORT))
 face_cascade = cv2.CascadeClassifier(
     "/home/pi/opencv/data/haarcascades/haarcascade_frontalface_default.xml"
 )
@@ -28,8 +33,11 @@ for roots, dirs, files in os.walk(gpath):
 # faces：表示检测到的人脸目标序列
         faces = face_cascade.detectMultiScale(gray, 1.03, 5)
         if len(faces) != 0:
-            f_record.write(fpath+"/"+file)
-            cv2.imwrite(fpath+"/"+file, img)
+            print('debug:'+fpath+"/"+file)
+            cv2.imwrite(fpath + "/" + file, img)
+            b = fpath+"/"+file
+            f_record.sendall(len(b))
+            f_record.sendall(b)
             #print('did not detect any')
         for (x, y, w, h) in faces:
             if w+h > 200:  # //针对这个图片画出最大的外框
@@ -42,4 +50,4 @@ for roots, dirs, files in os.walk(gpath):
         # cv2.waitKey(1000)
         # cv2.destroyAllWindows()
           # 保存图片
-close(f_record)
+f_record.close()

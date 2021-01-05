@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "./face.py", line 16, in <module>
+    f_record.connect((HOST, PORT))
+TypeError: an integer is required (got type str)
