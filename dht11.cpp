@@ -25,7 +25,7 @@
 //1.连接serer时会卡死(已解决：连续accept的逻辑问题)
 //2.原因不明的raspivide运行失败+rtmp拉流方式，必须修改方案
 //3.原因不明的ECONNRESET
-//4.收到sigpipe后exec，输出不输出到终端，不明
+//4.收到sigpipe后exec，输出不输出到终端，不明(看来不是这个问题，解决，之前重名可能是因为accept逻辑问题)
 using namespace std;
 using namespace nlohmann;
 int timeout;
@@ -239,19 +239,30 @@ static sigjmp_buf senv1, senv2;
 int jmp_code;
 static int reconnect;
 static struct sockaddr_in serverData, serverGraph, serverTick;
-int pid1, pid2, pid3;
+int pid1, pid2, pid3, pid4;
+void notBussiness(void)
+{
+    printf("clarify:I'm %d\n", getpid());
+    _exit(1);
+}
 void cleanUp(void)
 {
+    printf("I'm %d\n", getpid());
     close(connfdData);
     close(connfdGraph);
     close(connfdTick);
     //close(graph_fd);
     close(comfd);
-    //if (pid1 != 0)
+    if (pid1 != 0)
+        printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid1);
     kill(pid1, SIGKILL);
-    //if (pid2 != 0)
+    if (pid2 != 0)
+        printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid2);
     kill(pid2, SIGKILL);
-    //if (pid3 != 0)
+    if (pid3 != 0)
+        printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid3);
+    if (pid4 != 0)
+        printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid4);
     kill(pid3, SIGKILL);
     //unlink(FIFO_DIR);
 #ifndef DEBUG
@@ -272,6 +283,11 @@ void cleanUp(void)
     }
 #endif
     //perror("rexec failed");
+    printf("debug:before redo\n");
+    int len = strlen(port);
+    port[len - 1] = (((port[len - 1]) - '0') + 1) % 10 + '0';
+    execl("./client", "./client", port, NULL);
+    perror("rexec failed");
 }
 void *graph_thread(void *args)
 {
@@ -377,8 +393,7 @@ void overtiming(int signo)
 void sigIntHandle(int signo)
 {
     printf("recv SIGINT!\n");
-    cleanUp();
-    execl("./client", "./client", port, NULL);
+    exit(1);
 }
 void *testThread(void *arg)
 {
@@ -425,6 +440,11 @@ void *tickTock(void *args)
         sleep(1);
     }
 }
+void test(void)
+{
+    //实验发现，fork的子进程继承exit注册
+    printf("hello!exit test!\n");
+}
 int main(int arc, char *argv[])
 {
     if (arc != 2)
@@ -459,6 +479,7 @@ int main(int arc, char *argv[])
     connfdGraph = socket(AF_INET, SOCK_STREAM, 0);
     connfdTick = socket(AF_INET, SOCK_STREAM, 0);
     atexit(cleanUp);
+    //atexit(test);
     // if (mkfifo(FIFO_DIR, 0777) < 0)
     // {
     //     perror("fifo failed");
@@ -552,6 +573,15 @@ int main(int arc, char *argv[])
     }
     if (pid1 == 0)
     {
+
+        close(connfdData);
+        close(connfdGraph);
+        close(connfdTick);
+        if (atexit(notBussiness) < 0)
+        {
+            perror("register notB failed");
+            exit(1);
+        }
         char duration[20];
         char vcode_path[20];
         sprintf(duration, "%d", duration_num);
@@ -596,6 +626,15 @@ int main(int arc, char *argv[])
     }
     if (pid2 == 0)
     {
+
+        close(connfdData);
+        close(connfdGraph);
+        close(connfdTick);
+        if (atexit(notBussiness) < 0)
+        {
+            perror("register notB failed");
+            exit(1);
+        }
         int pid2_c;
         const char *duration = "1";
         string vtmp = (string)VPATH + "/" + VNAME;
@@ -629,6 +668,15 @@ int main(int arc, char *argv[])
     }
     if (pid3 == 0)
     {
+
+        close(connfdData);
+        close(connfdGraph);
+        close(connfdTick);
+        if (atexit(notBussiness) < 0)
+        {
+            perror("register notB failed");
+            exit(1);
+        }
         int pid3_c;
 
         sigsetjmp(senv1, 1);

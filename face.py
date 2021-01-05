@@ -13,7 +13,7 @@ HOST = "127.0.0.1"
 PORT = sys.argv[3]
 #f_record = open(FIFO_NAME, 'w')
 f_record = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-f_record.connect((HOST, PORT))
+f_record.connect((HOST, socket.htons(int(PORT)) ))
 face_cascade = cv2.CascadeClassifier(
     "/home/pi/opencv/data/haarcascades/haarcascade_frontalface_default.xml"
 )

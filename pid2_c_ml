@@ -26,7 +26,7 @@ Input #0, h264, from './video/liveshow':
 Stream mapping:
   Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
 Press [q] to stop, [?] for help
-[swscaler @ 0x15d5d90] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x1851250] deprecated pixel format used, make sure you did set range correctly
 Output #0, image2, to './faces/image-%d.jpeg':
   Metadata:
     encoder         : Lavf58.20.100
@@ -35,7 +35,6 @@ Output #0, image2, to './faces/image-%d.jpeg':
       encoder         : Lavc58.35.100 mjpeg
     Side data:
       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
-frame=    4 fps=0.0 q=2.0 size=N/A time=00:00:02.00 bitrate=N/A dup=0 drop=58 speed=3.98x    frame=    6 fps=6.0 q=2.0 size=N/A time=00:00:04.00 bitrate=N/A dup=0 drop=101 speed=3.97x    frame=    8 fps=5.3 q=2.0 size=N/A time=00:00:06.00 bitrate=N/A dup=0 drop=144 speed=3.97x    frame=   10 fps=5.0 q=2.0 size=N/A time=00:00:08.00 bitrate=N/A dup=0 drop=202 speed=3.97x    frame=   13 fps=5.2 q=2.0 size=N/A time=00:00:11.00 bitrate=N/A dup=0 drop=264 speed=4.37x    frame=   15 fps=5.0 q=2.0 size=N/A time=00:00:13.00 bitrate=N/A dup=0 drop=308 speed= 4.3x    frame=   17 fps=4.8 q=2.0 size=N/A time=00:00:15.00 bitrate=N/A dup=0 drop=361 speed=4.24x    frame=   18 fps=4.5 q=2.0 size=N/A time=00:00:16.00 bitrate=N/A dup=0 drop=390 speed=3.96x    frame=   20 fps=4.4 q=2.0 size=N/A time=00:00:18.00 bitrate=N/A dup=0 drop=449 speed=3.96x    frame=   23 fps=4.6 q=2.0 size=N/A time=00:00:21.00 bitrate=N/A dup=0 drop=515 speed=4.16x    frame=   26 fps=4.7 q=2.0 size=N/A time=00:00:24.00 bitrate=N/A dup=0 drop=579 speed=4.33x    frame=   28 fps=4.6 q=2.0 size=N/A time=00:00:26.00 bitrate=N/A dup=0 drop=634 speed= 4.3x    frame=   30 fps=4.6 q=2.0 size=N/A time=00:00:28.00 bitrate=N/A dup=0 drop=690 speed=4.27x    frame=   33 fps=4.7 q=2.0 size=N/A time=00:00:31.00 bitrate=N/A dup=0 drop=749 speed=4.39x    frame=   35 fps=4.6 q=2.0 size=N/A time=00:00:33.00 bitrate=N/A dup=0 drop=805 speed=4.36x    [h264 @ 0x14cee80] error while decoding MB 37 29, bytestream -36
-[h264 @ 0x14cee80] concealing 50 DC, 50 AC, 50 MV errors in P frame
-frame=   36 fps=4.6 q=2.0 Lsize=N/A time=00:00:36.00 bitrate=N/A dup=0 drop=827 speed= 4.6x    
-video:196kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=    3 fps=0.0 q=2.0 size=N/A time=00:00:02.00 bitrate=N/A dup=0 drop=21 speed=3.87x    frame=    4 fps=3.8 q=2.0 size=N/A time=00:00:03.00 bitrate=N/A dup=0 drop=45 speed=2.89x    frame=    4 fps=2.6 q=2.0 size=N/A time=00:00:03.00 bitrate=N/A dup=0 drop=64 speed=1.93x    frame=    5 fps=2.4 q=2.0 size=N/A time=00:00:04.00 bitrate=N/A dup=0 drop=88 speed= 1.9x    frame=    6 fps=2.3 q=2.0 Lsize=N/A time=00:00:06.00 bitrate=N/A dup=0 drop=112 speed=2.28x    
+video:33kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Exiting normally, received signal 2.

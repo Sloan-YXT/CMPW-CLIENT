@@ -1,4 +1,6 @@
 Traceback (most recent call last):
-  File "./face.py", line 16, in <module>
-    f_record.connect((HOST, PORT))
-TypeError: an integer is required (got type str)
+  File "./face.py", line 4, in <module>
+    import cv2
+  File "/usr/local/lib/python3.7/dist-packages/cv2/__init__.py", line 5, in <module>
+    from .cv2 import *
+KeyboardInterrupt
