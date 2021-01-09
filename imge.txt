@@ -1,0 +1,1 @@
+fswebcam -d /dev/video0 --no-banner -r 320x640 test1.img

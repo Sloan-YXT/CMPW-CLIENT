@@ -289,95 +289,82 @@ void cleanUp(void)
     execl("./client", "./client", port, NULL);
     perror("rexec failed");
 }
+char file_dir[200];
+struct sockaddr_in com_addr, com_client;
+socklen_t client_len = sizeof(com_client);
 void *graph_thread(void *args)
 {
     int graph_fd;
-    comfd = socket(AF_INET, SOCK_STREAM, 0);
-    if (comfd < 0)
-    {
-        perror("comfd failed");
-        exit(1);
-    }
-    int n;
-    char file_dir[200];
 
-    //graph_fd = open(FIFO_DIR, O_RDONLY);
-    struct sockaddr_in com_addr, com_client;
-    socklen_t client_len = sizeof(com_client);
-    memset(&com_addr, sizeof(com_addr), 0);
-    com_addr.sin_family = AF_INET;
-    com_addr.sin_port = htons(com_port);
-    if (inet_aton("127.0.0.1", &com_addr.sin_addr) == 0)
-    {
-        perror("com addr failed");
-        exit(1);
-    }
-    if (::bind(comfd, (sockaddr *)&com_addr, sizeof(com_addr)) < 0)
-    {
-        perror("com bind failed");
-        exit(1);
-    }
-    if (listen(comfd, 10) < 0)
-    {
-        perror("com listen failed");
-        exit(1);
-    }
     int len;
     while (1)
     {
+        int n;
         graph_fd = accept(comfd, (sockaddr *)&com_client, &client_len);
-        n = recv(graph_fd, &len, sizeof(len), MSG_WAITALL);
-        if (n < 0)
+        if (graph_fd < 0)
         {
-            perror("read from fifo failed");
-            exit(1);
+            perror("accept failed");
+            _exit(1);
         }
-        if (n == 0)
+        int s_pid = fork();
+        if (s_pid == 0)
         {
+            atexit(notBussiness);
+            n = recv(graph_fd, &len, sizeof(len), MSG_WAITALL);
+            if (n < 0)
+            {
+                perror("read from fifo failed");
+                exit(1);
+            }
+            if (n == 0)
+            {
+                close(graph_fd);
+                continue;
+            }
+            n = recv(graph_fd, file_dir, len, MSG_WAITALL);
+            if (n < 0)
+            {
+                perror("read from fifo failed");
+                exit(1);
+            }
+            if (n == 0)
+            {
+                close(graph_fd);
+                continue;
+            }
+            file_dir[n] = 0;
+            printf("debug:gfile dir%s\n", file_dir);
+            int tmp_fd = open(file_dir, O_RDONLY);
+            if (tmp_fd < 0)
+            {
+                perror("gfd open failed");
+                exit(1);
+            }
+            int len = lseek(tmp_fd, 0, SEEK_END);
+            if (len < 0)
+            {
+                perror("lseek failed");
+                exit(1);
+            }
+            printf("debug:line%d:%d\n", __LINE__, len);
+            lseek(tmp_fd, 0, SEEK_SET);
+            int rlen = htonl(len);
+            n = send(connfdGraph, &rlen, sizeof(rlen), 4);
+            if (n <= 0)
+            {
+                perror("send graph len to server failed");
+                exit(1);
+            }
+            n = sendfile(connfdGraph, tmp_fd, 0, len);
+            if (n <= 0)
+            {
+                perror("send graph to server failed");
+                exit(1);
+            }
+            close(tmp_fd);
             close(graph_fd);
-            continue;
-        }
-        n = recv(graph_fd, file_dir, len, MSG_WAITALL);
-        if (n < 0)
-        {
-            perror("read from fifo failed");
             exit(1);
         }
-        if (n == 0)
-        {
-            close(graph_fd);
-            continue;
-        }
-        file_dir[n] = 0;
-        printf("debug:gfile dir%s\n", file_dir);
-        int tmp_fd = open(file_dir, O_RDONLY);
-        if (tmp_fd < 0)
-        {
-            perror("gfd open failed");
-            exit(1);
-        }
-        int len = lseek(tmp_fd, 0, SEEK_END);
-        if (len < 0)
-        {
-            perror("lseek failed");
-            exit(1);
-        }
-        printf("debug:line%d:%d\n", __LINE__, len);
-        lseek(tmp_fd, 0, SEEK_SET);
-        int rlen = htonl(len);
-        n = send(connfdGraph, &rlen, sizeof(rlen), 4);
-        if (n <= 0)
-        {
-            perror("send graph len to server failed");
-            exit(1);
-        }
-        n = sendfile(connfdGraph, tmp_fd, 0, len);
-        if (n <= 0)
-        {
-            perror("send graph to server failed");
-            exit(1);
-        }
-        close(tmp_fd);
     }
 }
 void overtiming(int signo)
@@ -393,7 +380,7 @@ void overtiming(int signo)
 void sigIntHandle(int signo)
 {
     printf("recv SIGINT!\n");
-    exit(1);
+    _exit(1);
 }
 void *testThread(void *arg)
 {
@@ -417,7 +404,7 @@ void *testThread(void *arg)
         exit(0);
     }
 }
-const int duration_num = 60;
+const int duration_num = 20;
 const char *client_name = "yaoxuetao\'s raspi";
 const char *client_pos = "yaoxuetao\'s personal office";
 void *tickTock(void *args)
@@ -478,7 +465,32 @@ int main(int arc, char *argv[])
     connfdData = socket(AF_INET, SOCK_STREAM, 0);
     connfdGraph = socket(AF_INET, SOCK_STREAM, 0);
     connfdTick = socket(AF_INET, SOCK_STREAM, 0);
+
+    comfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (comfd < 0)
+    {
+        perror("comfd failed");
+        exit(1);
+    }
     atexit(cleanUp);
+    memset(&com_addr, sizeof(com_addr), 0);
+    com_addr.sin_family = AF_INET;
+    com_addr.sin_port = htons(com_port);
+    if (inet_aton("0.0.0.0", &com_addr.sin_addr) == 0)
+    {
+        perror("com addr failed");
+        exit(1);
+    }
+    if (::bind(comfd, (sockaddr *)&com_addr, sizeof(com_addr)) < 0)
+    {
+        perror("com bind failed");
+        exit(1);
+    }
+    if (listen(comfd, 10) < 0)
+    {
+        perror("com listen failed");
+        exit(1);
+    }
     //atexit(test);
     // if (mkfifo(FIFO_DIR, 0777) < 0)
     // {
@@ -573,7 +585,7 @@ int main(int arc, char *argv[])
     }
     if (pid1 == 0)
     {
-
+        close(comfd);
         close(connfdData);
         close(connfdGraph);
         close(connfdTick);
@@ -584,13 +596,14 @@ int main(int arc, char *argv[])
         }
         char duration[20];
         char vcode_path[20];
-        sprintf(duration, "%d", duration_num);
+        sprintf(duration, "%d", 0);
         sprintf(vcode_path, "%d", vcode);
         string tmp = (string)VPATH + "/" + VNAME;
 
         int id = -1;
-        sigsetjmp(senv1, 1);
-        alarm(duration_num + 8); //避免无法启动
+        //更改方案
+        // sigsetjmp(senv1, 1);
+        // alarm(duration_num);
         int pid1_c = fork();
         id = (id + 1) % 10;
         if (pid1_c < 0)
@@ -626,7 +639,7 @@ int main(int arc, char *argv[])
     }
     if (pid2 == 0)
     {
-
+        close(comfd);
         close(connfdData);
         close(connfdGraph);
         close(connfdTick);
@@ -639,7 +652,6 @@ int main(int arc, char *argv[])
         const char *duration = "1";
         string vtmp = (string)VPATH + "/" + VNAME;
         string tmp_file = (string)GPATH + "/" + GNAME;
-        sleep(duration_num); //错开时间
         sigsetjmp(senv1, 1);
         alarm(duration_num);
         pid2_c = fork();
@@ -668,7 +680,7 @@ int main(int arc, char *argv[])
     }
     if (pid3 == 0)
     {
-
+        close(comfd);
         close(connfdData);
         close(connfdGraph);
         close(connfdTick);
@@ -678,10 +690,13 @@ int main(int arc, char *argv[])
             exit(1);
         }
         int pid3_c;
-
+        int id = -1;
         sigsetjmp(senv1, 1);
         alarm(duration_num);
+        id = (id + 1) % 200;
         pid3_c = fork();
+        string tmps = (string)GPATH + "/" + GNAME + " / " + to_string(id);
+        string tmpd = (string)CPATH + "/" + GNAME + "/" + to_string(id);
         if (pid3_c < 0)
         {
             perror("detect program start up failed");
@@ -689,18 +704,43 @@ int main(int arc, char *argv[])
         }
         if (pid3_c == 0)
         {
-            sleep(duration_num + 1);
+            sleep(1);
             int fd_pid3_c = open("./pid3_c_ml", O_WRONLY | O_TRUNC | O_CREAT, 0777);
             dup2(fd_pid3_c, 1);
             dup2(fd_pid3_c, 2);
-            execl("./face.py", "./face.py", GPATH, CPATH, argv[1], NULL);
+            printf("debug:%s\n", argv[1]);
+            execl("./face.py", "./face.py", tmps, tmpd, argv[1], NULL);
             perror("33333333333\n33333333333333\n33333333333333");
             exit(1);
         }
         while (1)
             ;
     }
+    // pid4 = fork();
+    // if (pid4 == 0)
+    // {
+    //     close(connfdData);
+    //     close(connfdGraph);
+    //     close(connfdTick);
+    //     if (atexit(notBussiness) < 0)
+    //     {
+    //         perror("register notB failed");
+    //         exit(1);
+    //     }
+    //     int pid4_c;
+    //     string tmp = (string)VPATH + "/" + VNAME;
+    //     sleep(duration_num);
+    //     sigsetjmp(senv1, 1);
+    //     alarm(duration_num);
+    //     pid4_c = fork();
 
+    //     if (pid4_c == 0)
+    //     {
+    //         execlp("rm", "rm", "-f", tmp.c_str(), NULL);
+    //         perror("rm proceess exec failed");
+    //         exit(1);
+    //     }
+    // }
     if (-1 == wiringPiSetup())
     {
         printf("Setup wiringPi failed!");

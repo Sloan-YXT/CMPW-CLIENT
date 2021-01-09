@@ -1,6 +1,5 @@
-Traceback (most recent call last):
-  File "./face.py", line 4, in <module>
-    import cv2
-  File "/usr/local/lib/python3.7/dist-packages/cv2/__init__.py", line 5, in <module>
-    from .cv2 import *
-KeyboardInterrupt
+debug:7779
+  File "./face.py", line 48
+    if w+h > 200:  # //针对这个图片画出最大的外框
+     ^
+IndentationError: expected an indented block

@@ -1,4 +1,4 @@
-client:dht11.o
+client:client.o
 	g++ $^ -o client -lwiringPi -pthread -g
 %.o:%.cpp
 	g++ -c $< -o $@  -std=c++14 -g
