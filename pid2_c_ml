@@ -3,8 +3,9 @@
 [0m[0m/dev/video0 opened.
 [0m[0mNo input was specified, using the first.
 [0m[0mAdjusting resolution from 320x640 to 320x240.
-[0m[31mError starting stream.
-[0m[31mVIDIOC_STREAMON: Value too large for defined data type
-[0m[0mUnable to use mmap. Using read instead.
-[0m[31mUnable to use read.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mDisabling banner.
+[0m[0mWriting JPEG image to './faces/image4.jpg'.
 [0m

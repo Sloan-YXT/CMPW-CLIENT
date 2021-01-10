@@ -1,27 +1,7 @@
-debug:7777
-debug:7777
-././faces/image
-debug:./face_results/image
+debug:7771
+debug:7771
+debug:./face_results/image9.jpg
 Traceback (most recent call last):
-  File "./face.py", line 40, in <module>
-    cv2.imwrite(fpath + "/" + file, img)
-cv2.error: OpenCV(4.4.0) /tmp/pip-wheel-2l8ccy47/opencv-python/opencv/modules/imgcodecs/src/loadsave.cpp:667: error: (-2:Unspecified error) could not find a writer for the specified extension in function 'imwrite_'
-write the img with jpg extension
-debug:7777
-debug:7777
-././faces/image.jpg
-debug:./face_results/image.jpg
-Traceback (most recent call last):
-  File "./face.py", line 42, in <module>
-    f_record.sendall(len(b))
-TypeError: a bytes-like object is required, not 'int'
-debug:7779
-debug:7779
-Traceback (most recent call last):
-  File "./face.py", line 29, in <module>
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-cv2.error: OpenCV(4.4.0) /tmp/pip-wheel-2l8ccy47/opencv-python/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
-
-
-
-
+  File "./face.py", line 50, in <module>
+    f_record.send(len(b).to_bytes())
+TypeError: to_bytes() missing required argument 'length' (pos 1)

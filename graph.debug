@@ -1,116 +1,4585 @@
-debug:n=0
 debug:n=4
 debug:len=25
 debug:n=25
-debug:gfile dir./face_results/image1.jpg
-debug:line364:28751
+debug:gfile dir./face_results/image9.jpg
+debug:line380:20493
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image3.jpg
-debug:line364:26801
+debug:line380:23055
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:33569
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:36056
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:30948
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:37794
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:37783
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:37983
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:30948
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:23921
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26453
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25638
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25753
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:31126
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:29950
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:22267
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:28303
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:23377
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:31692
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:39921
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:39004
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:37814
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:38430
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image7.jpg
-debug:line364:28720
+debug:line380:38324
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:38242
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:37443
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:38383
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:38455
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:37840
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:38025
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:38391
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:38195
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:38455
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:35351
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:35766
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:35736
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:34612
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:34150
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:32232
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:35405
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:33163
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:32982
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:34006
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:34448
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:35745
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:36264
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25502
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:36040
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:35368
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:35516
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26235
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:31676
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:30034
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:33680
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:33411
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:30128
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:35533
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:31008
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:34932
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:39125
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:38304
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:37385
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:30802
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:30994
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:31272
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:38926
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:28318
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:38876
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:39518
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:36144
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:34850
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:19061
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:23343
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26534
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26534
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26813
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26924
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26912
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27119
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26952
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25323
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26768
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26508
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:24171
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26260
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26622
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26666
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26554
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24999
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26324
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26381
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26451
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26757
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:27129
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27239
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27539
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27104
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27368
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27278
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27526
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27461
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:23563
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27078
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:27038
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27239
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27722
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27950
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27368
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27903
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27400
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:28376
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27402
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27078
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:26713
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26824
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26981
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27060
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27338
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27434
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25297
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:23998
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25202
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24618
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:24771
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:28335
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:29578
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26020
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25888
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25350
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25448
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24843
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25419
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25469
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:26016
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24738
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:29578
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24789
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25888
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26140
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26090
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24843
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:23479
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24340
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:24470
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24835
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24781
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24945
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:18817
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24889
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24526
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24840
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24681
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25324
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:25450
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25568
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25404
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25544
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25874
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25694
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:23912
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25199
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24999
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25686
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:25574
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25289
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26554
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25560
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26295
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25846
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26273
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26123
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26382
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25888
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:25602
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25956
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25632
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25493
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25447
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25525
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25736
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:23475
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27449
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26862
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:26561
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:28513
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:28154
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25493
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26017
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26855
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26655
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:32986
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:29750
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26862
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:28264
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:28173
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27366
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26292
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26767
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26676
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26613
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24810
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27012
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26411
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:26117
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:28173
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26394
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26375
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26473
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:22886
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26417
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26409
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27012
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25456
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:25029
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25429
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25992
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25965
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25696
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26088
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26142
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24601
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24678
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24954
 debug:n=4
 debug:len=25
 debug:n=25
 debug:gfile dir./face_results/image9.jpg
-debug:line364:30203
+debug:line380:25516
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26252
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25933
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25078
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24890
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26088
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25218
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:23468
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:23783
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25418
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25260
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25200
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25212
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25266
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25022
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26088
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25379
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25257
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24904
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24864
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24062
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24668
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27698
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27061
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27294
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27390
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25257
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:28648
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:28039
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:28021
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27509
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27755
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27698
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:28072
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27191
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27292
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27154
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26862
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27424
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:28239
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26311
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26969
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26376
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26851
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27191
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27591
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26194
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24070
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24048
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26992
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:23724
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26618
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27737
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26851
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27602
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26833
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27675
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26422
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:20544
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:28217
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:28619
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:28631
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25143
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:28385
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:28622
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26487
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:28379
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26422
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27412
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:28217
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:28619
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:28631
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27412
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27439
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:28622
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27222
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27392
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27383
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27442
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27205
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26494
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27135
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26973
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26272
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25829
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26664
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26973
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27296
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:28622
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27242
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27302
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27730
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27847
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27769
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26127
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:20534
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26278
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27296
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25349
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26459
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26819
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26783
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25872
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27132
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26852
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26471
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26752
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25896
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26628
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:23711
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27539
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25762
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:28955
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27755
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26950
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26414
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26333
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25979
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26908
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26603
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25127
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26418
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25154
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26720
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27555
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24395
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26770
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25979
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27191
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26935
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25127
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26018
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26443
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26470
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26055
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26518
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27813
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26950
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26814
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25110
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26526
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:28770
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26468
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26168
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26570
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26574
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26499
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26610
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26009
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26368
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26386
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25916
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26515
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26740
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27268
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26940
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26652
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26610
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25652
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27151
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26818
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26635
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26515
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26747
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26085
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26370
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26784
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27162
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27129
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27394
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27060
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26734
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25652
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26642
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26680
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26635
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26105
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27454
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25886
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25757
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26585
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26734
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26562
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26493
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26571
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25870
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26652
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26491
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26445
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26768
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26842
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26639
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26405
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:28441
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26847
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26880
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26673
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26605
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26758
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26566
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25217
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27420
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26799
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26402
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26947
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26880
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26357
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26665
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26425
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26416
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26903
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26978
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26879
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26771
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26409
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26428
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26642
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27903
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26132
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26950
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26789
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26978
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25526
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26693
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27556
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27221
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27249
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26458
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25175
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25899
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26789
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26467
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:23811
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27483
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26603
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26231
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24902
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25871
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27656
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25286
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26731
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26663
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:27143
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25563
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26541
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26788
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26343
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27586
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26551
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26742
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26599
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26234
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26202
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26420
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25666
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27555
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27391
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27500
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24816
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26918
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26509
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26234
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26737
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26140
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26417
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26501
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26443
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26841
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27756
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27474
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26101
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27535
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26320
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24155
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26839
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26337
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26044
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26446
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25404
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26507
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26932
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:19707
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26116
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26273
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26856
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26512
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26571
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26504
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26802
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26640
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27171
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25299
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27654
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26076
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26823
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26646
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26537
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26505
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26524
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27137
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26808
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26185
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26428
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26387
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27022
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26834
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26318
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27068
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27311
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27478
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26808
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:27527
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26395
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26387
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26643
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26632
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26480
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26684
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26685
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27201
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26488
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25381
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26628
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26589
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26537
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26632
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25358
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26396
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26431
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26430
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26706
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26309
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26524
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26385
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27081
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26990
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26389
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25753
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26279
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26450
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26820
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26677
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26693
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26385
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26410
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25909
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24962
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26337
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26364
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26818
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27891
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26300
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:21167
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26682
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25871
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:23299
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26225
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27960
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27460
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26609
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25919
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26559
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26690
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26682
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26263
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26089
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26060
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25578
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26055
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26609
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26313
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26131
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25528
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25483
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25207
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24941
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26219
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26365
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26234
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26282
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26396
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26505
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26341
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26369
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26312
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26270
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26123
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26223
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26253
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26326
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26215
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26278
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26148
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25664
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24629
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25461
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26054
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25698
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26140
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26326
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26054
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26187
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26148
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25925
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26012
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26080
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25897
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26282
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26145
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26011
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26055
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26101
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26048
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26031
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25960
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26115
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25742
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25774
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26441
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26106
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26144
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26688
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26925
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25740
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25942
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25994
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26377
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26141
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26202
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26106
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26427
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26270
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26123
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:26332
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26247
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26198
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26166
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26222
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26247
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26106
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25951
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26270
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25600
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25151
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:26259
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26159
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25818
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27134
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25398
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25354
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25533
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25164
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25340
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25132
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24933
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26159
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24889
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27134
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25188
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25033
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25533
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25055
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25643
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25132
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25521
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25024
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24954
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25247
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:23765
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25146
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24213
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25219
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25387
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25476
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25204
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25216
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25235
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24253
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25051
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25149
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24825
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25290
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25171
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25367
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24778
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25211
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25170
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24791
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24968
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25268
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25197
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25022
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25476
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25528
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:21366
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26472
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:22740
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:23396
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24302
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25063
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25143
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25111
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24596
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24318
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24121
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26472
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:23793
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:23873
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:23955
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:23945
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25420
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:23909
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:22630
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:23797
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24071
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24429
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24126
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25192
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24782
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24911
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:23994
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:24120
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24096
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25088
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24242
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24293
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24245
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24203
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24368
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24260
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:23994
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:24567
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24087
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24124
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24241
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24293
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24726
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24984
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25078
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24260
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25172
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25570
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25163
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25252
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25306
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25167
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25100
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24348
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24986
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25416
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25172
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25822
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25754
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25641
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25307
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26441
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25621
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:25750
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25668
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25723
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26059
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25099
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24802
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24886
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24386
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24921
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24631
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24823
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24399
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24104
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:24189
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25156
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24523
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24886
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25476
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25356
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24900
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25615
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24781
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24104
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:24594
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24055
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24523
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24228
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24379
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26726
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26859
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26947
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:27215
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:27029
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26991
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:27250
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:27059
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:27101
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:27044
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26945
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:27649
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27801
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:25958
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26810
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:26357
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:26585
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25834
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25400
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26414
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26038
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:26293
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:26309
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26170
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25263
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25001
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25823
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25834
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:24506
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:25505
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:26038
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:28020
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:27922
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:26022
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25350
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:24931
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24883
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:23974
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:23515
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:24009
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:24332
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24196
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24178
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:23705
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:26026
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:25893
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25566
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:25384
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:25754
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:26020
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:25880
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:23780
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:25200
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:23705
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25923
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:23997
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:24047
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:24252
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:23553
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:22720
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:22597
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:24805
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:24277
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:24544
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:24717
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:24613
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:25505
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:38145
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:32898
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:34093
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:19234
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:35072
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:37186
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:38844
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:39012
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:38998
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:39737
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:39076
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:38813
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:38849
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:37033
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:38566
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:38765
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:39762
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image6.jpg
+debug:line380:39219
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:41643
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:56657
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:39070
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:46907
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:38053
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image0.jpg
+debug:line380:42202
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:43138
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:42051
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:30248
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:43708
+                                                                                               debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image1.jpg
+debug:line380:33688
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:41040
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:41660
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:40901
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:40642
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:40642
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image7.jpg
+debug:line380:40854
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:31598
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image5.jpg
+debug:line380:40642
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image9.jpg
+debug:line380:37280
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image8.jpg
+debug:line380:25452
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image2.jpg
+debug:line380:36072
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image3.jpg
+debug:line380:34218
+debug:n=4
+debug:len=25
+debug:n=25
+debug:gfile dir./face_results/image4.jpg
+debug:line380:38006

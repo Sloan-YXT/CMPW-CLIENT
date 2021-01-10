@@ -434,7 +434,7 @@ void *testThread(void *arg)
         exit(1);
     }
 }
-const int duration_num = 5;
+const int duration_num = 10;
 const char *client_name = "yaoxuetao\'s raspi";
 const char *client_pos = "yaoxuetao\'s personal office";
 void *tickTock(void *args)
@@ -454,7 +454,7 @@ void *tickTock(void *args)
         {
             exit(1);
         }
-        sleep(1);
+        sleep(5);
     }
 }
 void test(void)
@@ -747,7 +747,7 @@ int main(int arc, char *argv[])
             dup2(fd_pid3_c, 1);
             dup2(fd_pid3_c, 2);
             printf("debug:%s\n", argv[1]);
-            execl("./face.py", "./face.py", tmps.c_str(), tmpd.c_str(), argv[1], NULL);
+            execl("./face.py", "./face.py", tmps.c_str(), tmpd.c_str(), argv[1], to_string(id).c_str(), NULL);
             perror("33333333333\n33333333333333\n33333333333333");
             exit(1);
         }

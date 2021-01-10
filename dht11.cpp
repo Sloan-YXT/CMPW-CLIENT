@@ -18,7 +18,11 @@
 #include <sys/stat.h>
 #include <string>
 #include <iostream>
-#define DEBUG
+#define DEBUG(X)                              \
+    do                                        \
+    {                                         \
+        printf("debug:%d:%s\n", __LINE__, X); \
+    } while (0)
 #define _GNU_SOURCE
 #define SCALE 1
 #define FIFO_DIR "./communication.fifo"
@@ -247,6 +251,13 @@ void notBussiness(void)
 }
 void cleanUp(void)
 {
+    sigset_t sigs;
+    sigfillset(&sigs);
+    sigprocmask(SIG_SETMASK, &sigs, NULL);
+    sigset_t sigint;
+    sigemptyset(&sigint);
+    sigaddset(&sigint, SIGINT);
+    sigprocmask(SIG_UNBLOCK, &sigint, NULL);
     printf("I'm %d\n", getpid());
     close(connfdData);
     close(connfdGraph);
@@ -254,16 +265,21 @@ void cleanUp(void)
     //close(graph_fd);
     close(comfd);
     if (pid1 != 0)
+    {
         printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid1);
-    kill(pid1, SIGKILL);
+        kill(pid1, SIGKILL);
+    }
     if (pid2 != 0)
+    {
         printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid2);
-    kill(pid2, SIGKILL);
+        kill(pid2, SIGKILL);
+    }
+
     if (pid3 != 0)
+    {
         printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid3);
-    if (pid4 != 0)
-        printf("debug:cleanUp:%d,pid:%d\n", __LINE__, pid4);
-    kill(pid3, SIGKILL);
+        kill(pid3, SIGKILL);
+    }
     //unlink(FIFO_DIR);
 #ifndef DEBUG
     int pid = fork();
@@ -284,8 +300,14 @@ void cleanUp(void)
 #endif
     //perror("rexec failed");
     printf("debug:before redo\n");
+    sleep(1);
+    //注意：此处有较难理解的语意，子线程 exit例程中sleep，无法继续执行后续指令
+    // for (long long i = 9999999; i >= 0; i--)
+    //     ;
+    DEBUG("exiting");
     int len = strlen(port);
     port[len - 1] = (((port[len - 1]) - '0') + 1) % 10 + '0';
+    DEBUG("exiting");
     execl("./client", "./client", port, NULL);
     perror("rexec failed");
 }
@@ -295,7 +317,24 @@ socklen_t client_len = sizeof(com_client);
 void *graph_thread(void *args)
 {
     int graph_fd;
-
+    FILE *debug_graph = fopen("graph.debug", "a");
+    if (debug_graph == NULL)
+    {
+        perror("open debug graph failed");
+        exit(1);
+    }
+    setbuf(debug_graph, NULL);
+    // sigset_t smask;
+    // sigemptyset(&smask);
+    // sigaddset(&smask, SIGALRM);
+    // sigprocmask(SIG_SETMASK, &smask, NULL);
+    sigset_t sigs;
+    sigfillset(&sigs);
+    sigprocmask(SIG_SETMASK, &sigs, NULL);
+    sigset_t sigint;
+    sigemptyset(&sigint);
+    sigaddset(&sigint, SIGINT);
+    sigprocmask(SIG_UNBLOCK, &sigint, NULL);
     int len;
     while (1)
     {
@@ -304,67 +343,64 @@ void *graph_thread(void *args)
         if (graph_fd < 0)
         {
             perror("accept failed");
-            _exit(1);
+            exit(1);
         }
-        int s_pid = fork();
-        if (s_pid == 0)
+        n = recv(graph_fd, &len, sizeof(len), MSG_WAITALL);
+        fprintf(debug_graph, "debug:n=%d\n", n);
+        if (n < 0)
         {
-            atexit(notBussiness);
-            n = recv(graph_fd, &len, sizeof(len), MSG_WAITALL);
-            if (n < 0)
-            {
-                perror("read from fifo failed");
-                exit(1);
-            }
-            if (n == 0)
-            {
-                close(graph_fd);
-                continue;
-            }
-            n = recv(graph_fd, file_dir, len, MSG_WAITALL);
-            if (n < 0)
-            {
-                perror("read from fifo failed");
-                exit(1);
-            }
-            if (n == 0)
-            {
-                close(graph_fd);
-                continue;
-            }
-            file_dir[n] = 0;
-            printf("debug:gfile dir%s\n", file_dir);
-            int tmp_fd = open(file_dir, O_RDONLY);
-            if (tmp_fd < 0)
-            {
-                perror("gfd open failed");
-                exit(1);
-            }
-            int len = lseek(tmp_fd, 0, SEEK_END);
-            if (len < 0)
-            {
-                perror("lseek failed");
-                exit(1);
-            }
-            printf("debug:line%d:%d\n", __LINE__, len);
-            lseek(tmp_fd, 0, SEEK_SET);
-            int rlen = htonl(len);
-            n = send(connfdGraph, &rlen, sizeof(rlen), 4);
-            if (n <= 0)
-            {
-                perror("send graph len to server failed");
-                exit(1);
-            }
-            n = sendfile(connfdGraph, tmp_fd, 0, len);
-            if (n <= 0)
-            {
-                perror("send graph to server failed");
-                exit(1);
-            }
-            close(tmp_fd);
+            perror("read from fifo failed");
+            exit(1);
+        }
+        if (n == 0)
+        {
             close(graph_fd);
             exit(1);
         }
+        fprintf(debug_graph, "debug:len=%d\n", len);
+        n = recv(graph_fd, file_dir, len, MSG_WAITALL);
+        fprintf(debug_graph, "debug:n=%d\n", n);
+        if (n < 0)
+        {
+            perror("read from fifo failed");
+            exit(1);
+        }
+        if (n == 0)
+        {
+            close(graph_fd);
+            exit(1);
+        }
+        file_dir[n] = 0;
+        fprintf(debug_graph, "debug:gfile dir%s\n", file_dir);
+        int tmp_fd = open(file_dir, O_RDONLY);
+        if (tmp_fd < 0)
+        {
+            perror("gfd open failed");
+            exit(1);
+        }
+        int len = lseek(tmp_fd, 0, SEEK_END);
+        if (len < 0)
+        {
+            perror("lseek failed");
+            exit(1);
+        }
+        fprintf(debug_graph, "debug:line%d:%d\n", __LINE__, len);
+        lseek(tmp_fd, 0, SEEK_SET);
+        int rlen = htonl(len);
+        n = send(connfdGraph, &rlen, sizeof(rlen), 4);
+        if (n <= 0)
+        {
+            perror("send graph len to server failed");
+            exit(1);
+        }
+        n = sendfile(connfdGraph, tmp_fd, 0, len);
+        if (n <= 0)
+        {
+            perror("send graph to server failed");
+            exit(1);
+        }
+        close(tmp_fd);
+        close(graph_fd);
     }
 }
 void overtiming(int signo)
@@ -384,7 +420,10 @@ void sigIntHandle(int signo)
 }
 void *testThread(void *arg)
 {
-    pthread_detach(pthread_self());
+    sigset_t smask;
+    sigemptyset(&smask);
+    sigaddset(&smask, SIGALRM);
+    sigprocmask(SIG_SETMASK, &smask, NULL);
     int result;
     char message_box[100];
     printf("[testThread]start working!\n");
@@ -401,15 +440,16 @@ void *testThread(void *arg)
     if (result == 0)
     {
         printf("%s", "the server sended fin\n");
-        exit(0);
+        exit(1);
     }
 }
-const int duration_num = 20;
+const int duration_num = 10;
 const char *client_name = "yaoxuetao\'s raspi";
 const char *client_pos = "yaoxuetao\'s personal office";
 void *tickTock(void *args)
 {
     //TO DO:ECONNRESET , use wireshark
+
     sigset_t smask;
     sigemptyset(&smask);
     sigaddset(&smask, SIGALRM);
@@ -419,12 +459,12 @@ void *tickTock(void *args)
     while (1)
     {
         n = send(connfdTick, tickMessgae.c_str(), tickMessgae.size(), 0);
-        printf("debug:line%d:tick tock in working\n", __LINE__);
+        //printf("debug:line%d:tick tock in working\n", __LINE__);
         if (n <= 0)
         {
             exit(1);
         }
-        sleep(1);
+        sleep(5);
     }
 }
 void test(void)
@@ -432,13 +472,16 @@ void test(void)
     //实验发现，fork的子进程继承exit注册
     printf("hello!exit test!\n");
 }
+#define IRECORD "./record"
 int main(int arc, char *argv[])
 {
+    DEBUG("");
     if (arc != 2)
     {
         printf("Enter com port!\n");
         exit(1);
     }
+    DEBUG("");
     strcpy(port, argv[1]);
     com_port = atoi(argv[1]);
     char message_box[1000];
@@ -461,18 +504,20 @@ int main(int arc, char *argv[])
     socketInit(&serverData, portData);
     socketInit(&serverGraph, portGraph);
     socketInit(&serverTick, portTick);
-
+    DEBUG("");
     connfdData = socket(AF_INET, SOCK_STREAM, 0);
     connfdGraph = socket(AF_INET, SOCK_STREAM, 0);
     connfdTick = socket(AF_INET, SOCK_STREAM, 0);
-
+    DEBUG("");
     comfd = socket(AF_INET, SOCK_STREAM, 0);
     if (comfd < 0)
     {
         perror("comfd failed");
         exit(1);
     }
+    DEBUG("");
     atexit(cleanUp);
+    DEBUG("");
     memset(&com_addr, sizeof(com_addr), 0);
     com_addr.sin_family = AF_INET;
     com_addr.sin_port = htons(com_port);
@@ -601,35 +646,32 @@ int main(int arc, char *argv[])
         string tmp = (string)VPATH + "/" + VNAME;
 
         int id = -1;
-        //更改方案
-        // sigsetjmp(senv1, 1);
-        // alarm(duration_num);
-        int pid1_c = fork();
         id = (id + 1) % 10;
-        if (pid1_c < 0)
+
+        int fd_pid1_c = open("/dev/null", O_WRONLY);
+        int fd_pid2_c = open("./pid1_c_ml", O_WRONLY | O_CREAT | O_TRUNC, 0777);
+        if (fd_pid1_c < 0)
         {
-            perror("pid1's child start up failed");
+            perror("video output fd open failed");
             exit(1);
         }
-        if (pid1_c == 0)
+        if (fd_pid2_c < 0)
         {
-            printf("\n\n\ndebug:video child thread%d in working\n\n\n", id);
-            int fd_pid1_c = open("./pid1_c_ml", O_WRONLY | O_TRUNC | O_CREAT, 0777);
-            if (fd_pid1_c < 0)
-            {
-                perror("video output fd open failed");
-                exit(1);
-            }
-            dup2(fd_pid1_c, 1);
-            dup2(fd_pid1_c, 2);
-            //tmp += to_string(id);
-            cout << "Debug: video tmpdir:" << tmp << endl;
-            execl("./video.bash", "./video.bash", duration, tmp.c_str(), vcode_path, to_string(id).c_str(), NULL);
-            perror("111111111111111\n1111111111111111111\n1111111111111111111");
+            perror("video err fd open failed");
             exit(1);
         }
-        while (1)
-            ;
+#ifdef DEBUG
+        dup2(fd_pid2_c, 1);
+        dup2(fd_pid2_c, 2);
+#else
+        dup2(fd_pid1_c, 1);
+        dup2(fd_pid1_c, 2);
+#endif
+        //tmp += to_string(id);
+        cout << "Debug: video tmpdir:" << tmp << endl;
+        execl("./video.bash", "./video.bash", duration, tmp.c_str(), vcode_path, to_string(id).c_str(), NULL);
+        perror("111111111111111\n1111111111111111111\n1111111111111111111");
+        exit(1);
     }
     pid2 = fork();
     if (pid2 < 0)
@@ -651,9 +693,12 @@ int main(int arc, char *argv[])
         int pid2_c;
         const char *duration = "1";
         string vtmp = (string)VPATH + "/" + VNAME;
-        string tmp_file = (string)GPATH + "/" + GNAME;
+        string tmp_file;
+        int id = -1;
         sigsetjmp(senv1, 1);
         alarm(duration_num);
+        id = (id + 1) % 10;
+        tmp_file = (string)GPATH + "/" + GNAME + to_string(id);
         pid2_c = fork();
         if (pid2_c < 0)
         {
@@ -693,10 +738,10 @@ int main(int arc, char *argv[])
         int id = -1;
         sigsetjmp(senv1, 1);
         alarm(duration_num);
-        id = (id + 1) % 200;
+        id = (id + 1) % 10;
         pid3_c = fork();
-        string tmps = (string)GPATH + "/" + GNAME + " / " + to_string(id);
-        string tmpd = (string)CPATH + "/" + GNAME + "/" + to_string(id);
+        string tmps = (string)GPATH;
+        string tmpd = (string)CPATH;
         if (pid3_c < 0)
         {
             perror("detect program start up failed");
@@ -709,38 +754,13 @@ int main(int arc, char *argv[])
             dup2(fd_pid3_c, 1);
             dup2(fd_pid3_c, 2);
             printf("debug:%s\n", argv[1]);
-            execl("./face.py", "./face.py", tmps, tmpd, argv[1], NULL);
+            execl("./face.py", "./face.py", tmps.c_str(), tmpd.c_str(), argv[1], to_string(id).c_str(), NULL);
             perror("33333333333\n33333333333333\n33333333333333");
             exit(1);
         }
         while (1)
             ;
     }
-    // pid4 = fork();
-    // if (pid4 == 0)
-    // {
-    //     close(connfdData);
-    //     close(connfdGraph);
-    //     close(connfdTick);
-    //     if (atexit(notBussiness) < 0)
-    //     {
-    //         perror("register notB failed");
-    //         exit(1);
-    //     }
-    //     int pid4_c;
-    //     string tmp = (string)VPATH + "/" + VNAME;
-    //     sleep(duration_num);
-    //     sigsetjmp(senv1, 1);
-    //     alarm(duration_num);
-    //     pid4_c = fork();
-
-    //     if (pid4_c == 0)
-    //     {
-    //         execlp("rm", "rm", "-f", tmp.c_str(), NULL);
-    //         perror("rm proceess exec failed");
-    //         exit(1);
-    //     }
-    // }
     if (-1 == wiringPiSetup())
     {
         printf("Setup wiringPi failed!");

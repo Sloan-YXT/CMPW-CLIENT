@@ -1,5 +1,6 @@
-debug:7779
-  File "./face.py", line 48
-    if w+h > 200:  # //针对这个图片画出最大的外框
-     ^
-IndentationError: expected an indented block
+debug:7778
+debug:7778
+image9.jpg
+<class 'str'>
+debug:modify to image4.jpg
+debug:./face_results/image4.jpg
