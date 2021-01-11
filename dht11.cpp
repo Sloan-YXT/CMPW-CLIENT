@@ -18,6 +18,7 @@
 #include <sys/stat.h>
 #include <string>
 #include <iostream>
+#include <sys/syscall.h>
 #define DEBUG(X)                              \
     do                                        \
     {                                         \
@@ -410,6 +411,7 @@ void overtiming(int signo)
         printf("connecting overtime!\n");
         exit(0);
     }
+    printf("in sig alarm:I'm %d\n", syscall(SYS_gettid));
     printf("alarm!!!timeout!!!\n");
     siglongjmp(senv1, 1);
 }
@@ -498,8 +500,6 @@ int main(int arc, char *argv[])
     sigalarm.sa_handler = overtiming;
     sigalarm.sa_flags |= SA_RESTART;
     sigaction(SIGINT, &sigint, NULL);
-    sigaction(SIGPIPE, &sigpipe, NULL);
-    sigaction(SIGALRM, &sigalarm, NULL);
     pthread_t test_thread, graph_thread_p, tick_tock;
     socketInit(&serverData, portData);
     socketInit(&serverGraph, portGraph);
@@ -536,12 +536,6 @@ int main(int arc, char *argv[])
         perror("com listen failed");
         exit(1);
     }
-    //atexit(test);
-    // if (mkfifo(FIFO_DIR, 0777) < 0)
-    // {
-    //     perror("fifo failed");
-    //     exit(1);
-    // }
     if (access(GPATH, F_OK))
     {
         if (mkdir(GPATH, 0777) < 0)
@@ -766,6 +760,8 @@ int main(int arc, char *argv[])
         printf("Setup wiringPi failed!");
         return 1;
     }
+    sigaction(SIGPIPE, &sigpipe, NULL);
+    sigaction(SIGALRM, &sigalarm, NULL);
     printf("..................raspi sensor working..................\n");
     if (sigsetjmp(senv1, 1) != 0)
     {
