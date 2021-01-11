@@ -318,7 +318,11 @@ socklen_t client_len = sizeof(com_client);
 void *graph_thread(void *args)
 {
     int graph_fd;
+#ifdef DEBUG
     FILE *debug_graph = fopen("graph.debug", "a");
+#else
+    FILE *debug_graph = fopen("/dev/null", "w");
+#endif
     if (debug_graph == NULL)
     {
         perror("open debug graph failed");
@@ -477,6 +481,10 @@ void test(void)
 #define IRECORD "./record"
 int main(int arc, char *argv[])
 {
+    //after exec,not reset signal mask?
+    sigset_t sigs;
+    sigemptyset(&sigs);
+    sigprocmask(SIG_SETMASK, &sigs, NULL);
     DEBUG("");
     if (arc != 2)
     {
@@ -493,6 +501,8 @@ int main(int arc, char *argv[])
     sigpipe.sa_flags = 0;
     sigpipe.sa_handler = sigPipeHandle;
     sigemptyset(&sigint.sa_mask);
+    //notice:alarm would affect program even if _exit is executed!!!!!!
+    sigfillset(&sigint.sa_mask);
     sigint.sa_flags = 0;
     sigint.sa_handler = sigIntHandle;
     sigemptyset(&sigalarm.sa_mask);
@@ -689,6 +699,7 @@ int main(int arc, char *argv[])
         string vtmp = (string)VPATH + "/" + VNAME;
         string tmp_file;
         int id = -1;
+        sigaction(SIGALRM, &sigalarm, NULL);
         sigsetjmp(senv1, 1);
         alarm(duration_num);
         id = (id + 1) % 10;
@@ -730,6 +741,7 @@ int main(int arc, char *argv[])
         }
         int pid3_c;
         int id = -1;
+        sigaction(SIGALRM, &sigalarm, NULL);
         sigsetjmp(senv1, 1);
         alarm(duration_num);
         id = (id + 1) % 10;
