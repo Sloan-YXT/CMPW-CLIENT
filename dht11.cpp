@@ -224,6 +224,7 @@ void sendMessage(int connfd, char *message_box)
     {
         printf("Data transferring error:");
         printf("%s", strerror(errno));
+        //in/aft registed func,call recv leads to _exit
         exit(1);
     }
     result = write(connfd, message_box, strlen(message_box));
@@ -260,9 +261,7 @@ void cleanUp(void)
     sigaddset(&sigint, SIGINT);
     sigprocmask(SIG_UNBLOCK, &sigint, NULL);
     printf("I'm %d\n", getpid());
-    close(connfdData);
-    close(connfdGraph);
-    close(connfdTick);
+
     //close(graph_fd);
     close(comfd);
     if (pid1 != 0)
@@ -309,6 +308,9 @@ void cleanUp(void)
     int len = strlen(port);
     port[len - 1] = (((port[len - 1]) - '0') + 1) % 10 + '0';
     DEBUG("exiting");
+    close(connfdData);
+    close(connfdGraph);
+    close(connfdTick);
     execl("./client", "./client", port, NULL);
     perror("rexec failed");
 }
@@ -399,11 +401,20 @@ void *graph_thread(void *args)
             exit(1);
         }
         n = sendfile(connfdGraph, tmp_fd, 0, len);
-        if (n <= 0)
-        {
-            perror("send graph to server failed");
-            exit(1);
-        }
+        // char *p = new char[len];
+        // n = read(tmp_fd, p, len);
+        // if (n <= 0)
+        // {
+        //     perror("read graph to server failed");
+        //     exit(1);
+        // }
+        // n = send(connfdGraph, p, len, 0);
+        // if (n <= 0)
+        // {
+        //     perror("send graph to server failed");
+        //     exit(1);
+        // }
+        // delete p;
         close(tmp_fd);
         close(graph_fd);
     }
@@ -422,6 +433,7 @@ void overtiming(int signo)
 void sigIntHandle(int signo)
 {
     printf("recv SIGINT!\n");
+    printf("pid=%d\n", getpid());
     _exit(1);
 }
 void *testThread(void *arg)
@@ -673,6 +685,7 @@ int main(int arc, char *argv[])
 #endif
         //tmp += to_string(id);
         cout << "Debug: video tmpdir:" << tmp << endl;
+        cout << getpid() << endl;
         execl("./video.bash", "./video.bash", duration, tmp.c_str(), vcode_path, to_string(id).c_str(), NULL);
         perror("111111111111111\n1111111111111111111\n1111111111111111111");
         exit(1);
@@ -704,6 +717,7 @@ int main(int arc, char *argv[])
         alarm(duration_num);
         id = (id + 1) % 10;
         tmp_file = (string)GPATH + "/" + GNAME + to_string(id);
+        int pid2 = getpid();
         pid2_c = fork();
         if (pid2_c < 0)
         {
@@ -715,6 +729,7 @@ int main(int arc, char *argv[])
             int fd_pid2_c = open("./pid2_c_ml", O_WRONLY | O_TRUNC | O_CREAT, 0777);
             dup2(fd_pid2_c, 1);
             dup2(fd_pid2_c, 2);
+            cout << pid2 << endl;
             execl("./capture.bash", "./capture.bash", vtmp.c_str(), duration, tmp_file.c_str(), NULL);
             perror("2222222222222222\n22222222222222222\n2222222222222222");
             exit(1);
@@ -745,6 +760,7 @@ int main(int arc, char *argv[])
         sigsetjmp(senv1, 1);
         alarm(duration_num);
         id = (id + 1) % 10;
+        int pid3 = getpid();
         pid3_c = fork();
         string tmps = (string)GPATH;
         string tmpd = (string)CPATH;
@@ -759,6 +775,7 @@ int main(int arc, char *argv[])
             int fd_pid3_c = open("./pid3_c_ml", O_WRONLY | O_TRUNC | O_CREAT, 0777);
             dup2(fd_pid3_c, 1);
             dup2(fd_pid3_c, 2);
+            cout << pid3 << endl;
             printf("debug:%s\n", argv[1]);
             execl("./face.py", "./face.py", tmps.c_str(), tmpd.c_str(), argv[1], to_string(id).c_str(), NULL);
             perror("33333333333\n33333333333333\n33333333333333");

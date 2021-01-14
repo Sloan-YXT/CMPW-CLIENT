@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-#  -*- coding: gb2312 -*-
+#  -*- coding: utf-8 -*-
 import numpy as np
 import cv2
 import sys
 import os
 import socket
-# ÒªÊ¹ÓÃHaar cascadeÊµÏÖ£¬½öÐèÒª°Ñ¿âÐÞ¸ÄÎªlbpcascade_frontalface.xml
+# ÒªÊ¹ï¿½ï¿½Haar cascadeÊµï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ñ¿ï¿½ï¿½Þ¸ï¿½Îªlbpcascade_frontalface.xml
 # cv2.data.haarcascades
 # face_cascade = cv2.CascadeClassifier('lbpcascade_frontalface.xml')
 # FIFO_NAME = "./communication.fifo"
@@ -28,7 +28,10 @@ for roots, dirs, files in os.walk(gpath):
         # print("./" + roots + "/" + file)
         words.append(file)
 words.sort()
-a = words[len(words) - 1]
+if(len(words) != 0):
+    a = words[len(words) - 1]
+else:
+    sys.exit(0)
 print(a)
 print(type(a))
 if int(a[5]) > int(sys.argv[4]):
@@ -41,18 +44,18 @@ fpath = sys.argv[2]+"/"+words[len(words)-1]
 # print(fpath)
 img = cv2.imread(gpath)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-# Ê¶±ðÊäÈëÍ¼Æ¬ÖÐµÄÈËÁ³¶ÔÏó.·µ»Ø¶ÔÏóµÄ¾ØÐÎ³ß´ç
-# º¯ÊýÔ­ÐÍdetectMultiScale(gray, 1.2,3,CV_HAAR_SCALE_IMAGE,Size(30, 30))
-# grayÐèÒªÊ¶±ðµÄÍ¼Æ¬
-# 1.03£º±íÊ¾Ã¿´ÎÍ¼Ïñ³ß´ç¼õÐ¡µÄ±ÈÀý
-# 5£º±íÊ¾Ã¿Ò»¸öÄ¿±êÖÁÉÙÒª±»¼ì²âµ½4´Î²ÅËãÊÇÕæµÄÄ¿±ê(ÒòÎªÖÜÎ§µÄÏñËØºÍ²»Í¬µÄ´°¿Ú´óÐ¡¶¼¿ÉÒÔ¼ì²âµ½ÈËÁ³)
-# CV_HAAR_SCALE_IMAGE±íÊ¾²»ÊÇËõ·Å·ÖÀàÆ÷À´¼ì²â£¬¶øÊÇËõ·ÅÍ¼Ïñ£¬Size(30, 30)ÎªÄ¿±êµÄ×îÐ¡×î´ó³ß´ç
-# faces£º±íÊ¾¼ì²âµ½µÄÈËÁ³Ä¿±êÐòÁÐ
+# Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½Î³ß´ï¿½
+# ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½detectMultiScale(gray, 1.2,3,CV_HAAR_SCALE_IMAGE,Size(30, 30))
+# grayï¿½ï¿½ÒªÊ¶ï¿½ï¿½ï¿½Í¼Æ¬
+# 1.03ï¿½ï¿½ï¿½ï¿½Ê¾Ã¿ï¿½ï¿½Í¼ï¿½ï¿½ß´ï¿½ï¿½Ð¡ï¿½Ä±ï¿½ï¿½ï¿½
+# 5ï¿½ï¿½ï¿½ï¿½Ê¾Ã¿Ò»ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½âµ½4ï¿½Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½(ï¿½ï¿½Îªï¿½ï¿½Î§ï¿½ï¿½ï¿½ï¿½ï¿½ØºÍ²ï¿½Í¬ï¿½Ä´ï¿½ï¿½Ú´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½âµ½ï¿½ï¿½ï¿½ï¿½)
+# CV_HAAR_SCALE_IMAGEï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Size(30, 30)ÎªÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ß´ï¿½
+# facesï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½âµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 faces = face_cascade.detectMultiScale(gray, 1.03, 5)
 if len(faces) != 0:
     print('debug:'+fpath)
     for (x, y, w, h) in faces:
-        if w+h > 200:  # //Õë¶ÔÕâ¸öÍ¼Æ¬»­³ö×î´óµÄÍâ¿ò
+        if w+h > 200:  # //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             img2 = cv2.rectangle(
                 img, (x, y), (x + w, y + h), (255, 255, 255), 4)
             roi_gray = gray[y:y+h, x:x+w]
@@ -70,5 +73,5 @@ if len(faces) != 0:
 # cv2.imshow('img', img)
 # cv2.waitKey(1000)
 # cv2.destroyAllWindows()
-  # ±£´æÍ¼Æ¬
+  # ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
 f_record.close()
